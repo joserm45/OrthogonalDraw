@@ -15,13 +15,14 @@ struct Layer
 	uint width = 0;
 	uint height = 0;
 	uint* gid = nullptr;
-	
+	inline uint Get(int x, int y) const;
 	~Layer();
 	
 };
 	
 	
 	// TODO 6: Short function to get the value of x,y
+
 
 
 
@@ -63,7 +64,7 @@ struct MapData
 	SDL_Color			background_color;
 	MapTypes			type;
 	p2List<TileSet*>	tilesets;
-	p2DynArray<Layer*>	layers;
+	p2List<Layer*>		layers;
 	// TODO 2: Add a list/array of layers to the map!
 	
 };

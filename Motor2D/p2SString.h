@@ -4,7 +4,8 @@
 
 
 #define TMP_STRING_SIZE	4096
-	
+#include <assert.h>	
+
 class p2SString
 {
 private:
